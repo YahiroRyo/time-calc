@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+#app {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+#calc-list {
+    height: 50vh;
+    overflow-y: auto;
+}
+.calc__title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+.calc__input-form {
+    margin-bottom: 24px;
+}
+.calc__input-form-wrapper {
+    margin-bottom: 24px;
+    background-color: #f3f3f3;
+    padding: 24px;
+}
+.calc__input-form__label {
+    color: #333;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.calc__input-form__input {
+    color: #333;
+    display: block;
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 0 #333;
+    box-sizing: border-box;
+    transition: .3s;
+    width: 100%;
+}
+.calc__input-form__input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 #333;
+    transform: translateY(4px);
+}
+.calc__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.calc__actions__submit,
+.calc__actions__reset,
+.calc__actions__add-time {
+    background-color: #333;
+    border-radius: 40px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 60px;
+    transition: .3s;
+    box-shadow: 0 4px 0 #000;
+}
+.calc__actions__submit:hover,
+.calc__actions__reset:hover,
+.calc__actions__add-time:hover {
+    background-color: #666;
+    cursor: pointer;
+    box-shadow: 0 0 0 #000;
+    transform: translateY(4px);
+}
+.calc__actions__reset {
+    background-color: #bf0000;
+    box-shadow: 0 4px 0 #af0000;
+}
+.calc__actions__reset:hover {
+    background-color: #df0000;
+    box-shadow: 0 0 0 #af0000;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.modal__contents {
+    background-color: #fff;
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    border-radius: 16px;
+}
+.modal__contents__title {
+    color: #333;
+    text-align: center;
+    font-size: 40px;
+}
+.modal__contents__text {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}

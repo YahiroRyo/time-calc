@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>給与休憩時間計算</title>
+    <script src="time.js" defer></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main id="app">
+        <form class="calc" action="/" method="POST">
+            <h1 class="calc__title">稼働の休憩時間計算するお</h1>
+            <div id="calc-list">
+            </div>
+            <div class="calc__actions">
+                <button class="calc__actions__reset" type="button">リセット</button>
+                <button class="calc__actions__add-time" type="button">＋ 稼働追加</button>
+                <button class="calc__actions__submit" type="submit">計算</button>
+            </div>
+        </form>
+        <div class="modal">
+            <div class="modal__contents">
+                <h1 class="modal__contents__title">休憩時間</h1>
+                <p class="modal__contents__text"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
